@@ -2,7 +2,7 @@
 import urllib
 import urllib2
 import re
-import  thread
+import thread
 import time
 
 class QSBK:
@@ -31,7 +31,7 @@ class QSBK:
         if not pageCode:
             print "page load error"
             return None
-        pattern = re.compile('h2>(.*?)</h2.*?content">(.*?)</.*?number">(.*?)</',re.S)
+        pattern = re.compile(r'<h2>(.*?)</h2>.*?<span>(.*?)</span>.*?number">(.*?)</',re.S)
         items = re.findall(pattern,pageCode)
         pageStories = []
         for item in items:
