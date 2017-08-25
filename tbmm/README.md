@@ -10,4 +10,11 @@
 
 安装方法： brew install phantomjs
 
+#### 启动方式
+
+```
+pyspider all
+
+```
+
 [参考教材](http://cuiqingcai.com/2652.html)
